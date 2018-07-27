@@ -43,10 +43,9 @@ spark-shell
 ## Use as a denpendency
 (1) build from source and publish locally
 ```scala
-sbt compile publish-local
+sbt compile publishLocal
 ```
-(2) Move the whole directory `com.intel` from `.ivy2/local` to `.ivy2/cache`<br>
-(3) Add following codes into `build.sbt` when you want to import IMLLIB package as a denpendency
+(2) Add following codes into `build.sbt` when you want to import IMLLIB package as a denpendency
 ```
 libraryDependencies += "com.intel" % "imllib_2.11" % "0.0.1"
 ```
